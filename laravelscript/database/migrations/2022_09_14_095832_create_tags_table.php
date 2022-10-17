@@ -1,5 +1,5 @@
 <?php
-//use App\Models\Tag;
+use App\Models\Tag;
 use App\Models\User;
 //use App\Model\Event;
 use Illuminate\Database\Migrations\Migration;

@@ -4,6 +4,8 @@ namespace Database\Factories;
 namespace Illuminate\Support;
 use vendor\laravel\framework\src\Illuminate\Support\Str;
 use App\Models\User;
+use App\Models\Tag;
+
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -19,7 +21,7 @@ class TagFactory extends Factory
         $title = $this->faker->sentence(rand(1, 3));
         return [
             'name' => $title,
-            'content' => Str::slug($title),
+            'slug' => Str::slug($title),
         ];
     }
 }

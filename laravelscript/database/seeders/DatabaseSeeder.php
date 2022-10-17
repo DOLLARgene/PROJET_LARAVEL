@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
                 ])->each
                 (function($event) use ($tags)
                     {
-                        $event->tags()->attach($tags->random(2));
+                        $event->tags()->attach($tags->random(3));
                     }
                 );
             }

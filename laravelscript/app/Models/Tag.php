@@ -2,6 +2,7 @@
 
 namespace App\Models;
 use App\Models\Event;
+use Database\Factories\TagFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
