@@ -19,8 +19,8 @@ class CreateEventsTable extends Migration
             $table->string('slog');
             $table->text('content');
             $table->boolean('premium');
-            $table->timestamp('start_at');
-            $table->timestamp('end_at');
+            $table->dateTime('start_at');
+            $table->dateTime('end_at');
             
             $table->foreignIdFor(User::class);
 
